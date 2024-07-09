@@ -10,17 +10,24 @@
     
     <h1>Calculadora de Cobertura CMYK</h1>
     <form id="upload-form">
-        <input type="file" id="pdf-file" accept="application/pdf">
+        <input type="file" id="pdf-file" accept="application/pdf" hidden>
         <div id="drop-area">
             <p>Arrastra y suelta un archivo PDF aquí o haz clic para seleccionarlo</p>
+            <div id="file-info-container">
+                <p id="file-info"></p>
+            </div>
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+            </div>
         </div>
-        <input type="submit" value="Subir y Calcular" onclick="handleFile()">
+        
+        <input type="submit" value="Subir y Calcular" onclick="handleFile()" hidden>
         
     </form>
+    
     <div id="result"></div>
 
-    <!-- Incluir PDF.js 
-    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>-->
+    <!-- Incluir PDF.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
    
     <script src="app.js"></script>

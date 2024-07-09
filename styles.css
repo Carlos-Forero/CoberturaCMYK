@@ -11,15 +11,16 @@ body {
 h1 {
     margin-bottom: 20px;
 }
-
+/*
 form {
     margin-bottom: 20px;
-}
+}*/
 
 #drop-area {
-    border: 2px dashed #ccc;
+    border: 2px dashed #ff0000;
+    background-color: #f3f3f3;
     border-radius: 10px;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -29,9 +30,34 @@ form {
     background-color: #356CB3;
 }
 
-#result {
-    margin-top: 20px;
+#file-info-container {
+    margin-top: 5px;
+}
+
+#file-info {
+    font-weight: bold;
+}
+
+#progress-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    overflow: hidden;
     
 }
 
 
+#progress-bar {
+    width: 0%;
+    height: 20px;
+    background-color: #356CB3;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+}
+
+#result {
+    margin-top: 20px;
+    
+}
